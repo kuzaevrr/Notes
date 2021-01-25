@@ -1,4 +1,4 @@
-package com.kuzaev.notes;
+package com.kuzaev.notes.object;
 
 public class Note {
 

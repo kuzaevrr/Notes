@@ -1,4 +1,4 @@
-package com.kuzaev.notes;
+package com.kuzaev.notes.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -7,13 +7,20 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import com.kuzaev.notes.adapter.NoteAdapter;
+import com.kuzaev.notes.adapter.NoteAdapter.OnNoteClickListener;
+import com.kuzaev.notes.object.Note;
+import com.kuzaev.notes.tableDB.NotesContract;
+import com.kuzaev.notes.dbHelper.NotesDBHelper;
+import com.kuzaev.notes.R;
+import com.kuzaev.notes.activity.AddNoteActivity;
 
 import java.util.ArrayList;
 import java.util.List;

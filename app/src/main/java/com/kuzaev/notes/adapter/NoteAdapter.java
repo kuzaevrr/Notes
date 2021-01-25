@@ -1,4 +1,4 @@
-package com.kuzaev.notes;
+package com.kuzaev.notes.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +7,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.kuzaev.notes.object.Note;
+import com.kuzaev.notes.R;
 
 import java.util.List;
 
@@ -25,7 +28,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NotesViewHolde
         this.notes = notes;
     }
 
-    interface OnNoteClickListener{
+    public interface OnNoteClickListener{
         void onNoteClick(int position);
         void onLongClick(int position);
     }

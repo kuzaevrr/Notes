@@ -1,12 +1,12 @@
-package com.kuzaev.notes;
+package com.kuzaev.notes.dbHelper;
 
 import android.content.Context;
-import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.kuzaev.notes.tableDB.NotesContract;
 
 public class NotesDBHelper extends SQLiteOpenHelper {
 

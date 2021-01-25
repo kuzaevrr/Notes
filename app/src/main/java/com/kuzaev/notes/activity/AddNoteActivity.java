@@ -1,4 +1,4 @@
-package com.kuzaev.notes;
+package com.kuzaev.notes.activity;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +13,11 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.kuzaev.notes.tableDB.NotesContract;
+import com.kuzaev.notes.dbHelper.NotesDBHelper;
+import com.kuzaev.notes.R;
+import com.kuzaev.notes.activity.MainActivity;
 
 public class AddNoteActivity extends AppCompatActivity {
 
