@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="textViewLabelDayOfWeek">День недели:</string>
+    <string name="buttonAddNoteText">Добавить заметку</string>
+    <string name="oneRadio">1</string>
+    <string name="twoRadio">2</string>
+    <string name="threeRadio">3</string>
+    <string name="hintTitleAddActivity">Напишите тему заметки</string>
+    <string name="hintDescriptionAddActivity">Текст заметки</string>
+    <string name="toast_is_filled">Все поля должны быть заполнены</string>
+    <string-array name="listItem">
+        <item>Понедельник</item>
+        <item>Вторник</item>
+        <item>Среда</item>
+        <item>Четверг</item>
+        <item>Пятница</item>
+        <item>Суббота</item>
+        <item>Восскресенье</item>
+    </string-array>
+</resources>
