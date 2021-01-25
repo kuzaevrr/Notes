@@ -15,7 +15,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.kuzaev.notes.adapter.NoteAdapter;
-import com.kuzaev.notes.adapter.NoteAdapter.OnNoteClickListener;
 import com.kuzaev.notes.object.Note;
 import com.kuzaev.notes.tableDB.NotesContract;
 import com.kuzaev.notes.dbHelper.NotesDBHelper;
@@ -91,9 +90,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void getData() {
         notes.clear();
-        String selection = NotesContract.NotesEntry.COLUMN_DAY_OF_WEEK + " == ?";
-        String[] selectionArgs = new String[]{"1"};
-        Cursor cursor = database.query(NotesContract.NotesEntry.TABLE_NAME, null, selection, selectionArgs, null, null, NotesContract.NotesEntry.COLUMN_DAY_OF_WEEK);
+//        String selection = NotesContract.NotesEntry.COLUMN_DAY_OF_WEEK + " == ?";
+//        String[] selectionArgs = new String[]{"1"};
+        Cursor cursor = database.query(NotesContract.NotesEntry.TABLE_NAME, null, null, null, null, null, NotesContract.NotesEntry.COLUMN_DAY_OF_WEEK);
 
         while (cursor.moveToNext()) {
             int id = cursor.getInt(cursor.getColumnIndex(NotesContract.NotesEntry._ID));
